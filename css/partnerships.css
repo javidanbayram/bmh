@@ -1,0 +1,73 @@
+/* ========================================
+   Partnerships — BM Hospitality
+   Partner logos section
+   ======================================== */
+
+.partnerships__header {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.partnerships__title {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: var(--weight-light);
+  margin-bottom: var(--space-sm);
+}
+
+.partnerships__subtitle {
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+  font-weight: var(--weight-light);
+}
+
+.partnerships__logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-2xl);
+}
+
+.partnerships__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 60px;
+  opacity: 0.35;
+  filter: grayscale(100%);
+  transition: all var(--duration-base) var(--ease-out);
+}
+
+.partnerships__logo:hover {
+  opacity: 0.7;
+  filter: grayscale(0%);
+}
+
+.partnerships__logo svg,
+.partnerships__logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Text-based logos for placeholder */
+.partnerships__logo-text {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-medium);
+  color: var(--color-text-primary);
+  letter-spacing: var(--tracking-wide);
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .partnerships__logos {
+    gap: var(--space-xl);
+  }
+
+  .partnerships__logo {
+    width: 100px;
+  }
+}

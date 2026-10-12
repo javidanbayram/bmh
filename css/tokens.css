@@ -1,0 +1,145 @@
+/* ========================================
+   Design Tokens — BM Hospitality
+   All design system variables
+   ======================================== */
+
+:root {
+  /* ---- Ultra-Luxury Color Palette ---- */
+  --color-ivory: #F8F5F0;
+  --color-cream: #FAF8F5;
+  --color-warm-white: #FFFEFC;
+  --color-beige: #EBE3D7;
+  --color-stone: #BDB0A0;
+  --color-stone-light: #DDD3C7;
+  --color-stone-dark: #8C7B6B;
+  --color-espresso: #1A1311;
+  --color-charcoal: #111010;
+  --color-dark-brown: #2C211B;
+  
+  /* Rich Metals & Accents */
+  --color-bronze: #A87C4F;
+  --color-gold-subtle: #D4AF37;
+  --color-gold-light: #F3E5AB;
+  --color-bronze-light: #C9A27E;
+  --color-bronze-glow: rgba(168, 124, 79, 0.22);
+  --color-gold-glow: rgba(212, 175, 55, 0.25);
+
+  /* Semantic colors */
+  --color-bg-primary: var(--color-ivory);
+  --color-bg-secondary: var(--color-cream);
+  --color-bg-dark: #0D0C0B;
+  --color-bg-surface-dark: #151413;
+  --color-bg-warm: var(--color-beige);
+  --color-text-primary: var(--color-espresso);
+  --color-text-secondary: #3D322C;
+  --color-text-muted: var(--color-stone-dark);
+  --color-text-light: var(--color-cream);
+  --color-accent: var(--color-bronze);
+  --color-accent-hover: #BF8E5E;
+  --color-border: rgba(26, 19, 17, 0.08);
+  --color-border-light: rgba(26, 19, 17, 0.04);
+  --color-border-dark: rgba(248, 245, 240, 0.1);
+
+  /* Glassmorphism surfaces */
+  --glass-nav-light: rgba(248, 245, 240, 0.82);
+  --glass-nav-dark: rgba(13, 12, 11, 0.78);
+  --glass-card: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.08);
+
+  /* ---- Typography ---- */
+  --font-display: 'Cormorant Garamond', 'Georgia', serif;
+  --font-brand: 'Cinzel', 'Cormorant Garamond', serif;
+  --font-serif-body: 'Cormorant Garamond', 'Georgia', serif;
+  --font-body: 'Plus Jakarta Sans', 'Manrope', -apple-system, sans-serif;
+
+  /* Font sizes (fluid clamp) */
+  --text-xs: clamp(0.6875rem, 0.65rem + 0.15vw, 0.8125rem);    /* 11–13px */
+  --text-sm: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem);          /* 12–14px */
+  --text-base: clamp(0.9375rem, 0.9rem + 0.18vw, 1.05rem);      /* 15–17px */
+  --text-lg: clamp(1.05rem, 0.95rem + 0.4vw, 1.3rem);          /* 17–21px */
+  --text-xl: clamp(1.2rem, 1rem + 0.6vw, 1.6rem);              /* 19–26px */
+  --text-2xl: clamp(1.5rem, 1.25rem + 1.2vw, 2.35rem);          /* 24–38px */
+  --text-3xl: clamp(1.85rem, 1.4rem + 1.8vw, 3rem);            /* 30–48px */
+  --text-4xl: clamp(2.25rem, 1.6rem + 2.5vw, 3.8rem);           /* 36–61px */
+  --text-5xl: clamp(2.6rem, 1.8rem + 3.5vw, 4.6rem);           /* 42–74px */
+  --text-6xl: clamp(3rem, 1.8rem + 5vw, 6rem);                 /* 48–96px */
+  --text-hero: clamp(3rem, 1.6rem + 4.6vw, 6.25rem);           /* 48–100px */
+
+  /* Font weights */
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* Line heights */
+  --leading-tight: 1.02;
+  --leading-snug: 1.15;
+  --leading-normal: 1.55;
+  --leading-relaxed: 1.75;
+  --leading-loose: 2;
+
+  /* Letter spacing */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.06em;
+  --tracking-wider: 0.14em;
+  --tracking-widest: 0.22em;
+  --tracking-ultra: 0.35em;
+
+  /* ---- Spacing ---- */
+  --space-xs: clamp(0.5rem, 0.4rem + 0.4vw, 0.75rem);
+  --space-sm: clamp(0.75rem, 0.6rem + 0.6vw, 1.25rem);
+  --space-md: clamp(1rem, 0.8rem + 0.8vw, 1.5rem);
+  --space-lg: clamp(1.5rem, 1rem + 2vw, 3rem);
+  --space-xl: clamp(2.25rem, 1.4rem + 3vw, 4.5rem);
+  --space-2xl: clamp(3.5rem, 1.8rem + 5vw, 7rem);
+  --space-3xl: clamp(4.5rem, 2.5rem + 7vw, 9rem);
+  --space-4xl: clamp(6rem, 3rem + 10vw, 12rem);
+  --space-section: clamp(6rem, 4rem + 8vw, 12rem);
+
+  /* ---- Layout ---- */
+  --container-max: 1440px;
+  --container-narrow: 920px;
+  --container-wide: 1680px;
+  --container-padding: clamp(1.5rem, 1.2rem + 2.5vw, 5rem);
+
+  /* ---- Ultra High-End Transitions & Physics Easing ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-smooth: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-cinematic: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --duration-instant: 150ms;
+  --duration-fast: 280ms;
+  --duration-base: 450ms;
+  --duration-slow: 750ms;
+  --duration-slower: 1000ms;
+  --duration-cinematic: 1400ms;
+
+  /* ---- Borders & Radius ---- */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 9999px;
+
+  /* ---- Deep Obsidian & Metallic Shadows ---- */
+  --shadow-sm: 0 2px 8px rgba(17, 16, 16, 0.04);
+  --shadow-md: 0 8px 24px rgba(17, 16, 16, 0.06);
+  --shadow-lg: 0 16px 40px rgba(17, 16, 16, 0.09);
+  --shadow-xl: 0 28px 64px rgba(17, 16, 16, 0.13);
+  --shadow-glow: 0 0 35px var(--color-bronze-glow);
+  --shadow-glow-gold: 0 0 45px var(--color-gold-glow);
+
+  /* ---- Z-index ---- */
+  --z-base: 1;
+  --z-above: 10;
+  --z-nav: 100;
+  --z-mobile-menu: 200;
+  --z-loader: 1000;
+  --z-cursor: 99999;
+}

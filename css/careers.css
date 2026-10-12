@@ -1,0 +1,94 @@
+/* ========================================
+   Careers — BM Hospitality
+   Premium recruitment section
+   ======================================== */
+
+.careers__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+}
+
+.careers__content {
+  padding: var(--space-xl) 0;
+}
+
+.careers__label {
+  margin-bottom: var(--space-md);
+}
+
+.careers__headline {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: var(--weight-light);
+  line-height: var(--leading-tight);
+  margin-bottom: var(--space-lg);
+}
+
+.careers__text {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-light);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xl);
+}
+
+.careers__cta {
+  margin-bottom: var(--space-xl);
+}
+
+.careers__departments {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+
+.careers__dept {
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--color-border-light);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  transition: color var(--duration-fast);
+}
+
+.careers__dept:hover {
+  color: var(--color-bronze);
+}
+
+.careers__dept-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--color-bronze);
+  flex-shrink: 0;
+}
+
+.careers__image {
+  position: relative;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+}
+
+.careers__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .careers__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .careers__image {
+    aspect-ratio: 16/10;
+    order: -1;
+  }
+}

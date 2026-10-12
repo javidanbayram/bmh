@@ -1,0 +1,92 @@
+/* ========================================
+   Experience — BM Hospitality
+   Emotional guest journey section
+   ======================================== */
+
+.experience {
+  overflow: hidden;
+}
+
+.experience__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+}
+
+.experience__image {
+  position: relative;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+}
+
+.experience__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.experience__content {
+  padding: var(--space-xl) 0;
+}
+
+.experience__headline {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: var(--weight-light);
+  line-height: var(--leading-tight);
+  margin-bottom: var(--space-lg);
+}
+
+.experience__headline em {
+  font-style: italic;
+  color: var(--color-bronze);
+}
+
+.experience__text {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-light);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xl);
+}
+
+.experience__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.experience__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.6em 1.2em;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-regular);
+  letter-spacing: var(--tracking-wide);
+  border: 1px solid var(--color-beige);
+  transition: all var(--duration-base) var(--ease-out);
+}
+
+.experience__tag:hover {
+  border-color: var(--color-bronze);
+  color: var(--color-bronze);
+}
+
+.experience__tag-icon {
+  font-size: 1.1em;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .experience__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .experience__image {
+    aspect-ratio: 16/10;
+  }
+}
